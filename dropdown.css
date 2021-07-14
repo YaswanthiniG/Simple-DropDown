@@ -1,0 +1,105 @@
+/*CSS file named as CSS_Code.css */
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+	/*background-image: url("flowers-with-dewdrop-5.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;	
+    background-position: right bottom;*/
+    background: url("flowers-with-dewdrop-5.jpg") no-repeat fixed;
+    background-size:cover;
+    font-family:serif
+    }
+.menu{
+    background-color: darkgreen;
+    text-align: center;
+    }
+.menu ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: white; 
+}
+.menu ul li{
+    width: 120px;
+    margin:10px;
+    padding:10px; 
+}
+.menu ul li a{
+    text-decoration: none;
+    color:white;
+    
+    }
+.active, .menu ul li:hover{
+    background-color: green;
+    border-radius: 2px;
+}
+.menu .fa{margin-right: 6px;}
+
+.sub-menu{
+    display: none;
+}
+
+.menu ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: darkgreen;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+.menu ul li:hover .sub-menu ul{
+    display: block;
+    margin: 8px;  
+}
+.menu ul li:hover .sub-menu ul li{
+    width: 120px;
+    padding: 8px;
+    border-bottom: 1px solid white;
+    background: tranparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu ul li:hover .sub-menu ul li:last-child
+{
+    border-bottom:none;
+}
+.menu ul li:hover .sub-menu ul li a:hover{
+    color:yellow;
+}
+.fa-angle-right{
+    float: right;
+    }
+
+.inner-sub2{
+    display: none;
+}
+.inner-sub:hover .inner-sub2{
+     display: block;
+    position: absolute;
+    background-color: darkgreen;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+.menu ul li:hover .sub-menu ul li .inner-sub2 ul{
+    display: block;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
